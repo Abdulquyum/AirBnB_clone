@@ -10,4 +10,3 @@ class City(BaseModel):
     def __init__(self):
         state_id = ""
         self.name = ""
-
