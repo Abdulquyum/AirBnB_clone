@@ -5,6 +5,7 @@
 
 from datetime import datetime
 import uuid
+from models import storage
 
 
 class BaseModel():
@@ -15,6 +16,8 @@ class BaseModel():
         date_now = datetime.now()
         self.created_at = date_now.strftime("%Y-%m-%dT%H:%M:%S.%f")
         self.updated_at = date_now.strftime("%Y-%m-%dT%H:%M:%S.%f")
+        #if key, value not in self.kwargs.item():
+            #storage.new
 
     def __str__(self):
         return "[{}] ({}) {}".format(__class__.__name__, self.id, self.__dict__)
@@ -31,3 +34,4 @@ class BaseModel():
     def save(self):
         date_now = datetime.now()
         self.updated_at = datetime.strftime(date_now, "%Y-%m-%dT%H:%M:%S.%f")
+        storage.save
