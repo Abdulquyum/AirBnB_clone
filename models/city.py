@@ -7,7 +7,5 @@ from models.base_model import BaseModel
 
 class City(BaseModel):
     """ Modules defining users city """
-    def __init__(self):
-        state_id = ""
-        self.name = ""
-        super().__init__()
+    state_id = ""
+    name = ""

@@ -7,6 +7,4 @@ from models.base_model import BaseModel
 
 class State(BaseModel):
     """define modules for state of users"""
-    def __init__(self):
-        self.name = ""
-        super().__init__()
+    name = ""
