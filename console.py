@@ -6,9 +6,11 @@ import cmd
 
 
 class HBNBCommand(cmd.Cmd):
+    prompt = "(hbnb) "
+
     """ Console desplay in python along with its method"""
     def do_EOF(self, line):
-        """Exit"""
+        """EOF command to exit the program"""
         return True
 
     def do_quit(self, line):
