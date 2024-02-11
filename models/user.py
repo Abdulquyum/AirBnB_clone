@@ -6,9 +6,7 @@ from models.base_model import BaseModel
 
 class User(BaseModel):
     ''' define user class methods '''
-    def __init__(self):
-        self.email = ""
-        self.password = ""
-        self.first_name = ""
-        self.last_name = ""
-        super().__init__()
+    email = ""
+    password = ""
+    first_name = ""
+    last_name = ""
