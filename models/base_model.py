@@ -14,10 +14,17 @@ class BaseModel():
     def __init__(self, *args, **kwargs):
         self.id = str(uuid.uuid4())
         date_now = datetime.now()
-        self.created_at = date_now.strftime("%Y-%m-%dT%H:%M:%S.%f")
-        self.updated_at = date_now.strftime("%Y-%m-%dT%H:%M:%S.%f")
-        #if key, value not in self.kwargs.item():
-            #storage.new
+        date_format = "%Y-%m-%dT%H:%M:%S.%f"
+        self.created_at = date_now.strftime(date_format)
+        self.updated_at = date_now.strftime(date_format)
+        if len(kwargs):
+            for key, value in kwargs.items():
+                if key in ["creted_at", "updated_at"]:
+                    self.__dict__[key] = datetime.strptime(value, date_format)
+                else:
+                    self.__dict__[key] = value
+        #else:
+           # self.models.new(self)
 
     def __str__(self):
         return "[{}] ({}) {}".format(__class__.__name__, self.id, self.__dict__)
@@ -28,6 +35,8 @@ class BaseModel():
 
     def to_dict(self):
         obj_dict = self.__dict__
+        obj_dict['created_at'] = self.created_at
+        obj_dict['updated_at'] = self.updated_at
         obj_dict['__class__'] = self.__class__.__name__
         return obj_dict
 
