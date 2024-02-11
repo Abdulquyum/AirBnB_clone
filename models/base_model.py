@@ -23,11 +23,11 @@ class BaseModel():
                     self.__dict__[key] = datetime.strptime(value, date_format)
                 else:
                     self.__dict__[key] = value
-        #else:
-           # self.models.new(self)
+        # else:
+            # self.models.new(self)
 
     def __str__(self):
-        return "[{}] ({}) {}".format(__class__.__name__, self.id, self.__dict__)
+        return f"{[__class__.__name__]} {(self.id)} {self.__dict__}"
 
     def save(self):
         date_now = datetime.now()
