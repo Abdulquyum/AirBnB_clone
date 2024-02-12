@@ -34,9 +34,9 @@ class BaseModel():
         self.updated_at = datetime.strftime(date_now, "%Y-%m-%dT%H:%M:%S.%f")
 
     def to_dict(self):
-        obj_dict = self.__dict__
-        obj_dict['created_at'] = self.created_at
-        obj_dict['updated_at'] = self.updated_at
+        obj_dict = self.__dict__.copy()
+        obj_dict['created_at'] = self.created_at.isoformat()
+        obj_dict['updated_at'] = self.updated_at.isoformat()
         obj_dict['__class__'] = self.__class__.__name__
         return obj_dict
 
