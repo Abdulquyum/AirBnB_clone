@@ -21,6 +21,18 @@ class HBNBCommand(cmd.Cmd):
         """new line for empty lines"""
         pass
 
+    def do_show(self, line):
+        pass
+
+    def do_create(self, line):
+        pass
+
+    def do_destroy(self, line):
+        pass
+
+    def do_update(self, line):
+        pass
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
