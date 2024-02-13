@@ -20,9 +20,6 @@ class FileStorage():
         self.__objects = obj.id
 
     def save(self):
-        # with open(FileStorage.__file_path, 'w') as f:
-        # json.dumps(f)
-
         dup_obj = FileStorage.__objects
         obj_dict = {obj: dup_obj[obj].to_dict() for obj in dup_obj.keys()}
 
