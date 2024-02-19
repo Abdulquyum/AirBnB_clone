@@ -4,3 +4,9 @@ header {
 	width: 100%;
 	border-bottom: 1px #CCCCCC;
 }
+
+img[src="../images/logo.png"] {
+	margin-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
