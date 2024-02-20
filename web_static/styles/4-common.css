@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 .container {
+    position: relative;
     border:1px solid whitesmoke;
     max-width: 1000px;
     margin-top: 30px;
