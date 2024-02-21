@@ -46,16 +46,17 @@ h4 {
     color: black;
 }
 .popover {
+    display: none;
     background-color: #FAFAFA;
     color: black;
     width: 100%;
     border: #DDDDDD 1px;
     border-radius: 4px;
 }
-li+h2 {
-    color: black;
-    font-size: 16px;
-}
 li {
-    color: black;
+    list-style: none;
+color: black;
+}
+.popover:hover hide {
+    display: inline-block;
 }
