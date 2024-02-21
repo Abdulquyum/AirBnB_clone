@@ -52,11 +52,15 @@ h4 {
     width: 100%;
     border: #DDDDDD 1px;
     border-radius: 4px;
+    text-align: left;
 }
 li {
     list-style: none;
 color: black;
 }
-.popover:hover hide {
+.locations:hover .popover {
+    display: inline-block;
+}
+.amenities:hover .popover {
     display: inline-block;
 }
