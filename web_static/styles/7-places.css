@@ -1,0 +1,21 @@
+.flexing {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    margin: auto auto auto 300px;
+}
+.flexing>div {
+    border: 1px solid red;
+    width: 300px;
+    height: 70px;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.place {
+    max-width: 1000px;
+    font-size: 30px;
+    margin: 30px auto;
+}
