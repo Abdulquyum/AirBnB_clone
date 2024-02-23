@@ -7,5 +7,4 @@ from models.base_model import BaseModel
 
 class Amenity(BaseModel):
     """define modules for state amenities of users"""
-    def __init__(self):
-        self.name = ""
+    name = ""

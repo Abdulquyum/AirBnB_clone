@@ -8,27 +8,27 @@ import json
 class FileStorage():
     ''' Modules to help in saving, serialization of instances
     to a JSON file and deserializes JSON file to instances'''
-    def __init__(self):
-        self.__file_path = ""
-        self.__objects = {}
+
+    __file_path = "file.json"
+    __objects = {}
 
     def all(self):
-        return self.__objects
+        return FileStorage.__objects
 
     def new(self, obj):
         obj = BaseModel()
         self.__objects = obj.id
 
     def save(self):
-        try:
-            with open("file.json", 'w') as f:
-                f.write(json.dumps(self.__objects))
-        except Exception as s:
-            pass
+        dup_obj = FileStorage.__objects
+        obj_dict = {obj: dup_obj[obj].to_dict() for obj in dup_obj.keys()}
+
+        with open(FileStorage.__file_path, "w") as f:
+            json.dump(obj_dict, f)
 
     def reload(self):
         try:
-            with open("file.json", 'r') as f:
+            with open(FileStorage.__file_path, 'r') as f:
                 return json.load(f)
         except Exception as s:
             pass

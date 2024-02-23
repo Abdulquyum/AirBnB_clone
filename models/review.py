@@ -7,7 +7,6 @@ from models.base_model import BaseModel
 
 class Review(BaseModel):
     '''Modules to review user activities'''
-    def __init__(self):
-        self.place_id = ""
-        self.user_id = ""
-        self.text = ""
+    place_id = ""
+    user_id = ""
+    text = ""
