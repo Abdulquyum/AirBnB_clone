@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * === Places class style ===
  */
@@ -30,3 +31,46 @@
     font-size: 30px;
     margin: 0;
   }
+=======
+.flexing {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    margin: auto auto auto 300px;
+}
+.home, .house {
+    border: 1px solid lightpink;
+    border-top: 1px solid red;
+    width: 400px;
+    height: 70px;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 3%;
+    font-size: large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 70%;
+}
+.place {
+    max-width: 1000px;
+    font-size: 30px;
+    margin: 30px auto;
+}
+.suit {
+    display: block;
+    width: 400px;
+    height: 70px;
+    border: 1px solid lightpink;
+    border-bottom: 1px solid red;
+    border-radius: 3%;
+    margin: auto auto auto 500px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 70%;
+}
+>>>>>>> d50a87109460a22f143bd69cc6c310dd8d2dcb4a

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * === Global style ===
  */
@@ -18,3 +19,17 @@ body {
   strong {
     font-weight: bold;
   }
+=======
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+>>>>>>> d50a87109460a22f143bd69cc6c310dd8d2dcb4a

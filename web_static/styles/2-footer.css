@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * === Footer style ===
  */
@@ -13,3 +14,13 @@ footer {
     position: absolute;
     width: 100%;
   }
+=======
+footer {
+    background-color: #00FF00;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+>>>>>>> d50a87109460a22f143bd69cc6c310dd8d2dcb4a
